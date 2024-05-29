@@ -1,8 +1,11 @@
 import React from 'react'
+import { Navbar, About, Skills, Projects,  } from "./components";
 
 function App() {
   return (
-    <div>App</div>
+    <>
+    <Navbar />
+  </>
   )
 }
 
