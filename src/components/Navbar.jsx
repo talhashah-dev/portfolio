@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <nav className="flex">
         <div className="title">
-          <h1>Syed Talha</h1>
+          <h1 className="text-3xl font-bold underline">Hello world!</h1>
           <p>Frontend Developer</p>
         </div>
         <ul className="flex">
