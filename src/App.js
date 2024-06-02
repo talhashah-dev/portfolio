@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="container mx-auto py-5 px-20">
       <Navbar />
+      <About />
     </div>
   );
 }
