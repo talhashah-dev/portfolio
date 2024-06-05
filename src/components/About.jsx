@@ -3,7 +3,7 @@ import coding_gif from "../assets/images/coding.gif"
 
 function About() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto h-screen">
       <h1 className="text-2xl font-bold">About <span className="text-gray-300">Me</span></h1>
 
       <div className="flex gap-6 justify-between items-center">
