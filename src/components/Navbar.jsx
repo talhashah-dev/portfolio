@@ -4,7 +4,7 @@ import "../App.css"
 function Navbar() {
   return (
     <>
-      <nav className="container mx-auto flex justify-between items-center pt-8 mb-20">
+      <nav className="container mx-auto flex justify-between items-center pt-8 mb-16">
         <div className="title">
           <h1 className="text-4xl font-bold mb-2">Hello, I'm <span className="text-gray-300">Talha</span> 👋</h1>
           <p>Frontend Developer</p>
