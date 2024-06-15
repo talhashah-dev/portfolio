@@ -4,7 +4,7 @@ import { Navbar, About, Skills, Projects } from "./pages";
 
 function App() {
   return (
-    <div className="bg-[#171C28] text-white px-44 h-full">
+    <div className="bg-[#171C28] text-white px-44 h-screen">
       <Navbar />
       <About />
     </div>
