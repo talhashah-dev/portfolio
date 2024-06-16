@@ -1,12 +1,18 @@
 import React from "react";
 import "./App.css";
-import { Navbar, About, Skills, Projects } from "./pages";
+import { Navbar, About, Skills, Projects, Conatact } from "./pages";
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <div className="bg-[#171C28] text-white px-44 h-screen">
       <Navbar />
-      <About />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Conatact />} />
+      </Routes>
     </div>
   );
 }
