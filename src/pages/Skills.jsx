@@ -16,7 +16,7 @@ function Skills() {
   const [name, SetName] = useState(null);
 
   return (
-    <div className="h-screen">
+    <div className="h-1/2">
       <div className="text-3xl text-center font-bold mb-5 flex justify-between">
         <h1>Skills</h1>
         <div className="text-[#7e9199]">{name}</div>
