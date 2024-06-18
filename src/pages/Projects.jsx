@@ -11,7 +11,7 @@ function Projects() {
         <div class="px-4">
           <div class="flex items-center gap-5">
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
-              Chat App 
+              Weather App 
             </h1>
             <a href="https://github.com/talhashah-dev/weather-app-react" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
               <FaGithub /> 
