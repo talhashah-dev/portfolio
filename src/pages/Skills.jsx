@@ -10,6 +10,7 @@ import {
   Firebase_Logo,
   Linux_Logo,
   VSCode_Logo,
+  Tailwind_Logo
 } from "../assets/images/index";
 
 function Skills() {
@@ -54,9 +55,13 @@ function Skills() {
 
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
                 <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => SetName("Bootstrap")}/>
-              </div> 
               </div>
+
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Tailwind_Logo} alt="" className="h-12" onMouseMove={() => SetName("Tailwind")}/>
+              </div> 
             </div>
+          </div>
 
         </div>
 
