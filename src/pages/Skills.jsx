@@ -35,22 +35,22 @@ function Skills() {
             </div>
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={HTML_Logo} alt="" className="h-12" onMouseMove={() => SetName("CSS")}/>
+              <img src={HTML_Logo} alt="" className="h-12" onMouseMove={() => SetName("HTML5")}/>
             </div> 
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={CSS_Logo} alt="" className="h-10" onMouseMove={() => SetName("Bootstrap")}/>
+              <img src={CSS_Logo} alt="" className="h-10" onMouseMove={() => SetName("CSS3")}/>
             </div>
           </div>
 
           <div className="flex gap-2 items-center justify-between">
             <h4 className="text-2xl mb-2">Library and Framworks</h4>
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={React_Logo} alt="" className="h-12" onMouseMove={() => SetName("CSS")}/>
+              <img src={React_Logo} alt="" className="h-12" onMouseMove={() => SetName("React")}/>
             </div> 
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => SetName("CSS")}/>
+              <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => SetName("Bootstrap")}/>
             </div> 
           </div>
 
@@ -62,11 +62,11 @@ function Skills() {
           <div className="flex gap-2 items-center justify-between">
             <h4 className="text-2xl mb-2">Version Control</h4>
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Git_Logo} alt="" className="h-12" onMouseMove={() => SetName("HTML")}/>
+              <img src={Git_Logo} alt="" className="h-12" onMouseMove={() => SetName("Git")}/>
             </div>
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Github_Logo} alt="" className="h-12" onMouseMove={() => SetName("CSS")}/>
+              <img src={Github_Logo} alt="" className="h-12" onMouseMove={() => SetName("Github")}/>
             </div> 
           </div>
 
@@ -75,7 +75,7 @@ function Skills() {
             <h4 className="text-2xl mb-2">Other tools & Services</h4>
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Firebase_Logo} alt="" className="h-12" onMouseMove={() => SetName("Linux")}/>
+              <img src={Firebase_Logo} alt="" className="h-12" onMouseMove={() => SetName("Firebase")}/>
             </div>
 
             <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
