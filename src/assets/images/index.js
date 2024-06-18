@@ -8,6 +8,8 @@ import Git_Logo from "./git-logo.svg";
 import Github_Logo from "./github-logo.svg";
 import Linux_Logo from "./linux-logo.svg";
 import VSCode_Logo from "./vs-code-logo.svg";
+import Blog_App from "./blog-app.png"
+import Weather_App from "./weather-app.png"
 
 export {
   HTML_Logo,
@@ -20,4 +22,6 @@ export {
   Firebase_Logo,
   Linux_Logo,
   VSCode_Logo,
+  Blog_App,
+  Weather_App
 };
