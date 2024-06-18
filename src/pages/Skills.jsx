@@ -24,66 +24,73 @@ function Skills() {
 
 
       {/* Mainwrapper Start */}
-      <div className="flex items-center justify-between gap-10 h-full">
+      <div className="flex items-center justify-between mt-14 h-full">
 
         <div className="flex flex-col gap-10">
 
-          <div className="flex gap-2 items-center justify-between">
-            <h4 className="text-2xl mb-2">Languages</h4>
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={JavaScript_Logo} alt="" className="h-10" onMouseMove={() => SetName("JavaScript")}/>
-            </div>
+          <div className="flex flex-col gap-5">
+            <h4 className="text-2xl">Languages</h4>
+            <div className="flex gap-5">
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={JavaScript_Logo} alt="" className="h-10" onMouseMove={() => SetName("JavaScript")}/>
+              </div>
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={HTML_Logo} alt="" className="h-12" onMouseMove={() => SetName("HTML5")}/>
-            </div> 
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={HTML_Logo} alt="" className="h-12" onMouseMove={() => SetName("HTML5")}/>
+              </div> 
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={CSS_Logo} alt="" className="h-10" onMouseMove={() => SetName("CSS3")}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={CSS_Logo} alt="" className="h-10" onMouseMove={() => SetName("CSS3")}/>
+              </div>
             </div>
           </div>
 
-          <div className="flex gap-2 items-center justify-between">
-            <h4 className="text-2xl mb-2">Library and Framworks</h4>
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={React_Logo} alt="" className="h-12" onMouseMove={() => SetName("React")}/>
-            </div> 
+          <div className="flex flex-col gap-5">
+            <h4 className="text-2xl">Library and Framworks</h4>
+            <div className="flex gap-5">
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={React_Logo} alt="" className="h-12" onMouseMove={() => SetName("React")}/>
+              </div> 
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => SetName("Bootstrap")}/>
-            </div> 
-          </div>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => SetName("Bootstrap")}/>
+              </div> 
+              </div>
+            </div>
 
         </div>
 
 
         <div className="flex flex-col gap-10">
 
-          <div className="flex gap-2 items-center justify-between">
-            <h4 className="text-2xl mb-2">Version Control</h4>
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Git_Logo} alt="" className="h-12" onMouseMove={() => SetName("Git")}/>
-            </div>
+          <div className="flex flex-col gap-5">
+            <h4 className="text-2xl">Version Control</h4>
+            <div className="flex gap-5">
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Git_Logo} alt="" className="h-12" onMouseMove={() => SetName("Git")}/>
+              </div>
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Github_Logo} alt="" className="h-12" onMouseMove={() => SetName("Github")}/>
-            </div> 
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Github_Logo} alt="" className="h-12" onMouseMove={() => SetName("Github")}/>
+              </div> 
+            </div>
           </div>
 
 
-          <div className="flex gap-2 items-center justify-between">
-            <h4 className="text-2xl mb-2">Other tools & Services</h4>
+          <div className="flex flex-col gap-5">
+            <h4 className="text-2xl">Other tools & Services</h4>
+            <div className="flex gap-5">
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Firebase_Logo} alt="" className="h-12" onMouseMove={() => SetName("Firebase")}/>
+              </div>
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Firebase_Logo} alt="" className="h-12" onMouseMove={() => SetName("Firebase")}/>
-            </div>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Linux_Logo} alt="" className="h-12" onMouseMove={() => SetName("Linux")}/>
+              </div>
 
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={Linux_Logo} alt="" className="h-12" onMouseMove={() => SetName("Linux")}/>
-            </div>
-
-            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-              <img src={VSCode_Logo} alt="" className="h-12" onMouseMove={() => SetName("Visual Studio Code")}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={VSCode_Logo} alt="" className="h-12" onMouseMove={() => SetName("Visual Studio Code")}/>
+              </div>
             </div>
           </div>
 
