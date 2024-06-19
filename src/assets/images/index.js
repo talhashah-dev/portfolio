@@ -10,6 +10,7 @@ import Linux_Logo from "./linux-logo.svg";
 import VSCode_Logo from "./vs-code-logo.svg";
 import Blog_App from "./blog-app.png";
 import Weather_App from "./weather-app.png";
+import CRUD_App from "./crud-app.png";
 import Portfolio from "./portfolio.png";
 import Tailwind_Logo from "./tailwind-logo.svg";
 
@@ -27,5 +28,6 @@ export {
   Tailwind_Logo,
   Blog_App,
   Weather_App,
+  CRUD_App,
   Portfolio
 };
