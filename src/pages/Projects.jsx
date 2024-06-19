@@ -1,13 +1,13 @@
 import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Blog_App, Weather_App } from "../assets/images/index.js"
+import { Blog_App, Weather_App, Portfolio } from "../assets/images/index.js"
 
 function Projects() {
   return (
-    <div className="flex flex-wrap justify-around gap-y-10 pb-5">
+    <div className="flex flex-wrap justify-between gap-y-5 pb-5">
 
-      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all">
-        <img className="w-full" src={Weather_App} alt="Sunset in the mountains" />
+      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+        <img className="w-full" src={Weather_App} alt="Weather App" />
         <div className="px-4">
           <div className="flex items-center gap-5">
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
@@ -31,8 +31,8 @@ function Projects() {
         </div>
       </div>
 
-      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all">
-        <img className="w-full" src={Blog_App} alt="Sunset in the mountains" />
+      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+        <img className="w-full" src={Blog_App} alt="Blog App" />
         <div className="px-4">
           <div className="flex items-center gap-5">
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
@@ -44,7 +44,7 @@ function Projects() {
             <a href="https://talhashah-dev.github.io/blogging-app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
               <FaExternalLinkAlt /> 
             </a>
-            </div>
+          </div>
             <p className="text-gray-700 text-base">
               Write your thoughts and publish them online on a secure and easy-to-use platform.
             </p>
@@ -54,6 +54,36 @@ function Projects() {
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">css</span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">javascript</span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">firebase</span>
+        </div>
+      </div>
+
+      <div class="max-w-sm w-full lg:max-w-full lg:flex min-h-96 hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 rounded transition-all border border-white">
+        <div class="h-48 lg:h-auto lg:w-4/5 flex-none bg-cover text-center overflow-hidden rounded bg-cover bg-no-repeat bg-center" style={{backgroundImage: "url(" + Portfolio + ")"}} title="Portfolio Website">
+        </div>
+        <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-e p-4 flex flex-col gap-5 justify-center leading-normal">
+          <div class="">
+            <h1 className="font-bold text-xl mb-1 mt-1 text-black">
+              Portfolio
+            </h1>
+            <p className="text-gray-700 text-base">
+              Personal Portfolio built with React.js & Tailwind CSS
+            </p>
+          </div>
+
+          <div className="flex items-center gap-5">
+            <a href="https://github.com/talhashah-dev/portfolio" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+              <FaGithub /> 
+            </a>
+            <a href="https://talhashah.vercel.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+              <FaExternalLinkAlt /> 
+            </a>
+          </div>
+
+          <div className="">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">react</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">tailwind</span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">javascript</span>
+          </div>
         </div>
       </div>
 
