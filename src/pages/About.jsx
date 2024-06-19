@@ -4,12 +4,10 @@ import coding_gif from "../assets/images/coding.gif"
 function About() {
   return (
     <div className="container mx-auto">
-      <h1 className="text-2xl font-bold">About <span className="text-gray-300">Me</span></h1>
-
       <div className="flex gap-6 justify-between items-center">
         <div className="w-1/2">
+          <h1 className="text-4xl font-bold mb-5">Hello, I'm <span className="text-gray-300">Talha</span> 👋</h1>
           <p className="text-[#7e9199] mb-10">
-            {" "}
             I am a Full Stack Web Developer from Mauritania. I have a passion
             for creating seamless,beautiful and creative websites, I have
             experience with various programming languages and specifically web
