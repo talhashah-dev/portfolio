@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <div className="bg-[#171C28] text-white px-44 h-screen">
+    <div className="bg-[#171C28] text-white px-44 min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<About />} />

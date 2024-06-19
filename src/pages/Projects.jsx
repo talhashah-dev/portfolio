@@ -4,7 +4,7 @@ import { Blog_App, Weather_App } from "../assets/images/index.js"
 
 function Projects() {
   return (
-    <div className="flex flex-wrap justify-around gap-y-10">
+    <div className="flex flex-wrap justify-around gap-y-10 pb-5">
 
       <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all">
         <img class="w-full" src={Weather_App} alt="Sunset in the mountains" />
