@@ -8,7 +8,7 @@ function Navbar() {
     <div className="container mx-auto flex justify-between items-center pt-8 mb-12">
         <div className="title">
           <Link to="/">
-            <h1 className="text-2xl italic mb-2 text-gray-400 hover:text-white"> &lt;syedtalha /&gt;</h1>
+            <h1 className="text-3xl italic mb-2 text-gray-400 hover:text-white signature">&lt;Syed Talha /&gt;</h1>
           </Link>
         </div>
         <nav className="flex gap-10">
