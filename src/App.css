@@ -10,3 +10,13 @@
 .signature {
     font-family: Agustina;
 }
+
+.active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.deactive {
+    color: #7e9199;
+    border-bottom: none;
+}
