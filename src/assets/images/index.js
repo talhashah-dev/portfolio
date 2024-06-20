@@ -1,6 +1,7 @@
 import HTML_Logo from "./html-5-logo.svg";
 import CSS_Logo from "./css-3-logo.svg";
 import JavaScript_Logo from "./javascript-logo.svg";
+import Python_Logo from "./python-logo.svg";
 import Firebase_Logo from "./firebase-logo.svg";
 import Bootstrap_Logo from "./bootstrap-logo.svg";
 import React_Logo from "./reactjs-logo.svg";
@@ -19,6 +20,7 @@ export {
   HTML_Logo,
   CSS_Logo,
   JavaScript_Logo,
+  Python_Logo,
   Bootstrap_Logo,
   React_Logo,
   Git_Logo,

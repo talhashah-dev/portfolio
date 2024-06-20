@@ -3,6 +3,7 @@ import {
   HTML_Logo,
   CSS_Logo,
   JavaScript_Logo,
+  Python_Logo,
   Bootstrap_Logo,
   React_Logo,
   Git_Logo,
@@ -34,6 +35,10 @@ function Skills() {
             <div className="flex gap-5">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
                 <img src={JavaScript_Logo} alt="" className="h-10" onMouseMove={() => SetName("JavaScript")}/>
+              </div>
+
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
+                <img src={Python_Logo} alt="" className="h-10" onMouseMove={() => SetName("Python")}/>
               </div>
 
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
