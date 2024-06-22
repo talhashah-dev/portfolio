@@ -17,7 +17,7 @@ function About() {
           <a href="mailto:syedt.in00@gmail.com" className="border border-white p-2 hover:border-[#00B2DF] hover:text-[#00B2DF] transition-all inline-block w-1/2 max-[426px]:w-full">Get in touch</a>
         </div>
         <img
-          className="h-72 rounded max-[426px]:h-56 max-[426px]:w-full max-[426px]:mb-5"
+          className="h-72 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
           src={coding_gif}
           alt=""
         />
