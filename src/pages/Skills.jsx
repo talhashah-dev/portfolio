@@ -35,7 +35,7 @@ function Skills() {
             <h4 className="text-2xl">Languages</h4>
             <div className="flex gap-5 max-[426px]:flex-wrap">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={JavaScript_Logo} alt="" className="h-10" onMouseOver={() => setName("JavaScript")} onMouseLeave={() => handleLeave(null)}/>
+                <img src={JavaScript_Logo} alt="" className="h-10" onMouseMove={() => setName("JavaScript")} onMouseLeave={() => handleLeave(null)}/>
               </div>
 
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
