@@ -15,6 +15,8 @@ import CRUD_App from "./crud-app.png";
 import Js_Projects from "./js-projects.png";
 import Portfolio from "./portfolio.png";
 import Tailwind_Logo from "./tailwind-logo.svg";
+import Open_Menu from "./open-menu.svg";
+import Close_Menu from "./close-menu.svg";
 
 export {
   HTML_Logo,
@@ -33,5 +35,7 @@ export {
   Weather_App,
   CRUD_App,
   Js_Projects,
-  Portfolio
+  Portfolio,
+  Open_Menu,
+  Close_Menu
 };
