@@ -22,12 +22,12 @@ function Skills() {
   return (
     <div className="pb-5">
 
-      <div className="text-3xl text-center font-bold flex justify-between">
-        <h1>Skills</h1>
-        <div className="text-[#7e9199]">{name}</div>
+      <div className="text-3xl text-center font-bold flex justify-between items-center">
+        <h1 className="max-[426px]:text-2xl">Skills</h1>
+        <div className="text-[#7e9199] max-[426px]:text-2xl">{name}</div>
       </div>
 
-      <div className="flex max-[426px]:flex-col items-center justify-between mt-14 gap-10">
+      <div className="flex max-[426px]:flex-col items-center justify-between mt-14 max-[426px]:mt-10 gap-10">
 
         <div className="flex flex-col gap-10 max-[426px]:gap-5 max-[426px]:w-full">
 
