@@ -31,7 +31,7 @@ function Navbar() {
             <Link to="/skills" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 1 ? "active" : "deactive"}`} onClick={() => handleLinkClick(1)}>Skills</Link>
             <Link to="/projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>Projects</Link>
             <Link to="/contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>Contact</Link>
-            <div className="flex justify-center gap-5 mt-10">
+            <div className="justify-center gap-5 mt-10 hidden max-[426px]:flex">
               <a href="https://github.com/talhashah-dev" target="_black" className="text-4xl cursor-pointer " >
                 <FaGithub />
               </a>
