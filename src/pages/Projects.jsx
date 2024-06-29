@@ -13,10 +13,10 @@ function Projects() {
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
               Weather App 
             </h1>
-            <a href="https://github.com/talhashah-dev/weather-app-react" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+            <a href="https://github.com/talhashah-dev/weather-app-react" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
               <FaGithub /> 
             </a>
-            <a href="https://weather-app-react-st.netlify.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+            <a href="https://weather-app-react-st.netlify.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link" rel="noreferrer">
               <FaExternalLinkAlt /> 
             </a>
             </div>
@@ -38,10 +38,10 @@ function Projects() {
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
               Blog App
             </h1>
-            <a href="https://github.com/talhashah-dev/blogging-app" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+            <a href="https://github.com/talhashah-dev/blogging-app" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
               <FaGithub /> 
             </a>
-            <a href="https://talhashah-dev.github.io/blogging-app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+            <a href="https://talhashah-dev.github.io/blogging-app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link" rel="noreferrer">
               <FaExternalLinkAlt /> 
             </a>
           </div>
@@ -64,10 +64,10 @@ function Projects() {
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
               CRUD App
             </h1>
-            <a href="https://github.com/talhashah-dev/react-crud-app" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+            <a href="https://github.com/talhashah-dev/react-crud-app" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
               <FaGithub /> 
             </a>
-            <a href="https://react-crud-app-gilt.vercel.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+            <a href="https://react-crud-app-gilt.vercel.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link" rel="noreferrer">
               <FaExternalLinkAlt /> 
             </a>
           </div>
@@ -89,10 +89,10 @@ function Projects() {
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
               JavaScript Projects
             </h1>
-            <a href="https://github.com/talhashah-dev/js-projects" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+            <a href="https://github.com/talhashah-dev/js-projects" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
               <FaGithub /> 
             </a>
-            <a href="https://talhashah-dev.github.io/js-projects/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+            <a href="https://talhashah-dev.github.io/js-projects/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link" rel="noreferrer">
               <FaExternalLinkAlt /> 
             </a>
           </div>
@@ -114,10 +114,10 @@ function Projects() {
             <h1 className="font-bold text-xl mb-1 mt-1 text-black">
             Portfolio
             </h1>
-            <a href="https://github.com/talhashah-dev/portfolio" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo">
+            <a href="https://github.com/talhashah-dev/portfolio" className="font-bold text-xl mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
               <FaGithub /> 
             </a>
-            <a href="https://talhashah.vercel.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link">
+            <a href="https://talhashah.vercel.app/" className="font-bold text-base mb-1 mt-1 text-black cursor-pointer hover:scale-110" target="_blank" title="Hosted Link" rel="noreferrer">
               <FaExternalLinkAlt /> 
             </a>
           </div>
