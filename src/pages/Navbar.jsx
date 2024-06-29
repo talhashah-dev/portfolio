@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../App.css"
 import { Link } from "react-router-dom";
-import {Close_Menu, Open_Menu} from "../assets/images";
+import { Close_Menu, Open_Menu } from "../assets/images";
+import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa"
 
 function Navbar() {
   const [active, setActive] = useState(0);
@@ -30,6 +31,17 @@ function Navbar() {
             <Link to="/skills" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 1 ? "active" : "deactive"}`} onClick={() => handleLinkClick(1)}>Skills</Link>
             <Link to="/projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>Projects</Link>
             <Link to="/contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>Contact</Link>
+            <div className="flex justify-center gap-5 mt-10">
+              <a href="https://github.com/talhashah-dev" target="_black" className="text-4xl cursor-pointer " >
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/talhashah-dev/" target="_black" className="text-4xl cursor-pointer " >
+                <FaLinkedin />
+              </a>
+              <a href="https://stackoverflow.com/users/23691689/talha-shah" target="_black" className="text-4xl cursor-pointer " >
+                <FaStackOverflow />
+              </a>
+            </div>
         </nav>
     </div>
     </>
