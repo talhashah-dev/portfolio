@@ -24,7 +24,7 @@ function Navbar() {
           <Link to="/">
             <h1 className={`text-3xl max-[426px]:text-base italic mb-2 text-gray-400 hover:text-white signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
           </Link>
-          <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-8 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
+          <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-10 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
         </div>
         <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:h-screen max-[426px]:mt-10 max-[426px]:${menuOpen ? "flex" : "hidden"}`} >
             <Link to="/" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 0 ? "active" : "deactive"}`} onClick={() => handleLinkClick(0)}>About</Link>
