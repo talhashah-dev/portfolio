@@ -33,13 +33,13 @@ function Navbar() {
             <Link to="/projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>Projects</Link>
             <Link to="/contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>Contact</Link>
             <div className="justify-center gap-5 mt-10 hidden max-[426px]:flex">
-              <a href="https://github.com/talhashah-dev" target="_black" className="text-4xl cursor-pointer " >
+              <a href="https://github.com/talhashah-dev" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/talhashah-dev/" target="_black" className="text-4xl cursor-pointer " >
+              <a href="https://www.linkedin.com/in/talhashah-dev/" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
                 <FaLinkedin />
               </a>
-              <a href="https://stackoverflow.com/users/23691689/talha-shah" target="_black" className="text-4xl cursor-pointer " >
+              <a href="https://stackoverflow.com/users/23691689/talha-shah" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
                 <FaStackOverflow />
               </a>
             </div>

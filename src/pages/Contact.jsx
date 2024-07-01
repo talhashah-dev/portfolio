@@ -12,13 +12,13 @@ function Conatct(){
         <a href="tel:+923349009827" className="text-gray-400 text-2xl hover:text-white">+92-3349009827</a>
         <a href="mailto:syedt.in00@gmail.com" className="text-gray-400 text-2xl hover:text-white">syedt.in00@gmail.com</a>
         <div className="flex justify-center gap-5 mt-10">
-          <a href="https://github.com/talhashah-dev" target="_black" className="text-4xl cursor-pointer " >
+          <a href="https://github.com/talhashah-dev" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/talhashah-dev/" target="_black" className="text-4xl cursor-pointer " >
+          <a href="https://www.linkedin.com/in/talhashah-dev/" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
             <FaLinkedin />
           </a>
-          <a href="https://stackoverflow.com/users/23691689/talha-shah" target="_black" className="text-4xl cursor-pointer " >
+          <a href="https://stackoverflow.com/users/23691689/talha-shah" target="_blank" className="text-4xl cursor-pointer " rel="noreferrer" >
             <FaStackOverflow />
           </a>
         </div>
