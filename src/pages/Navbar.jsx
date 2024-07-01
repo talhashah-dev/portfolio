@@ -27,7 +27,7 @@ function Navbar() {
           </Link>
           <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-10 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
         </div>
-        <nav className="flex gap-10 max-[426px]:flex-col max-[426px]:h-screen max-[426px]:mt-10" style={{display : `${menuOpen ? "flex" : "none"}`}} >
+        <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:h-screen max-[426px]:mt-10 ${menuOpen ? "max-[426px]:flex" : "max-[426px]:hidden"}`}>
             <Link to="/" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 0 ? "active" : "deactive"}`} onClick={() => handleLinkClick(0)}>About</Link>
             <Link to="/skills" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 1 ? "active" : "deactive"}`} onClick={() => handleLinkClick(1)}>Skills</Link>
             <Link to="/projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>Projects</Link>
