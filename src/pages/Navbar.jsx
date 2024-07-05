@@ -4,17 +4,28 @@ import { Link } from "react-router-dom";
 import { Close_Menu, Open_Menu } from "../assets/images";
 import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa"
 
-function Navbar() {
+function Navbar({sendDataToParent}) {
   const [active, setActive] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   
   const handleLinkClick = (index) => {
     setActive(index);
-    setMenuOpen(false)
+    setMenuOpen(false);
+    sendDataToParent(false);
   };
 
+  // const sendData = () => {
+  //   sendDataToParent(menuOpen);
+  // };
+
   const handleMenu = () => {
-    menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+    // menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+
+    // sendData()
+    const newMenuState = !menuOpen;
+    setMenuOpen(newMenuState);
+    sendDataToParent(newMenuState);
+    console.log(menuOpen)
   };
   
 
@@ -27,7 +38,7 @@ function Navbar() {
           </Link>
           <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-10 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
         </div>
-        <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:h-screen max-[426px]:mt-10 ${menuOpen ? "max-[426px]:flex" : "max-[426px]:hidden"}`}>
+        <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:mt-10 ${menuOpen ? "max-[426px]:flex" : "max-[426px]:hidden"} `}>
             <Link to="/" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 0 ? "active" : "deactive"}`} onClick={() => handleLinkClick(0)}>About</Link>
             <Link to="/skills" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 1 ? "active" : "deactive"}`} onClick={() => handleLinkClick(1)}>Skills</Link>
             <Link to="/projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>Projects</Link>
@@ -43,7 +54,7 @@ function Navbar() {
                 <FaStackOverflow />
               </a>
             </div>
-        </nav>
+        </nav>   
     </div>
     </>
   );
