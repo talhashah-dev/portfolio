@@ -14,18 +14,10 @@ function Navbar({sendDataToParent}) {
     sendDataToParent(false);
   };
 
-  // const sendData = () => {
-  //   sendDataToParent(menuOpen);
-  // };
-
   const handleMenu = () => {
-    // menuOpen ? setMenuOpen(false) : setMenuOpen(true);
-
-    // sendData()
     const newMenuState = !menuOpen;
     setMenuOpen(newMenuState);
     sendDataToParent(newMenuState);
-    console.log(menuOpen)
   };
   
 
@@ -34,7 +26,7 @@ function Navbar({sendDataToParent}) {
     <div className="container mx-auto flex justify-between items-center pt-8 mb-12 max-[426px]:mb-6 max-[426px]:block">
         <div className="title max-[426px]:flex max-[426px]:justify-between max-[426px]:items-center">
           <Link to="/">
-            <h1 className={`text-3xl max-[426px]:text-base italic mb-2 text-gray-400 hover:text-white signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
+            <h1 className={`text-3xl max-[426px]:text-base italic text-gray-400 hover:text-white signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
           </Link>
           <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-10 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
         </div>
