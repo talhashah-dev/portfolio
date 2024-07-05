@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 
-function Conatct(){
+function Contact(){
   return (
     <>
       <div className="text-center flex flex-col gap-5 max-[426px]:mt-44">
@@ -27,4 +27,4 @@ function Conatct(){
   )
 }
 
-export default Conatct;
+export default Contact;

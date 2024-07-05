@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { About, Skills, Projects, Conatact } from "./pages";
+import { About, Skills, Projects, Contact } from "./pages";
 import { Navbar } from "./components/index.js";
 import { Routes, Route } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Conatact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       )}
     </div>
