@@ -4,7 +4,7 @@ import { Blog_App, Weather_App, CRUD_App, Js_Projects, Portfolio } from "../asse
 
 function Projects() {
   return (
-    <div className="flex flex-wrap justify-between gap-y-5 pb-5">
+    <div className="flex flex-wrap justify-between gap-y-5 pb-5 h-screen" id="projects">
 
       <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
         <img className="w-full" src={Weather_App} alt="Weather App" />
