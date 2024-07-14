@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { About, Skills, Projects, Contact } from "./pages";
 import { Navbar, Loader } from "./components/index.js";
-import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,12 +26,12 @@ function App() {
         <Loader />
       ) : (
         !menuOpen && (
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <>
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          </>
         )
       )}
     </div>
