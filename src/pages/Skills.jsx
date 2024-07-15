@@ -22,8 +22,8 @@ function Skills() {
   return (
     <div className="pb-5 h-auto my-20" id="skills">
 
-      <div className="text-3xl text-center font-bold flex justify-between items-center ">
-        <h1 className="max-[426px]:text-2xl">Skills</h1>
+      <div className="text-3xl min-[426px]:text-6xl text-center font-bold flex justify-between items-center ">
+        <h1 className="text-3xl min-[426px]:text-6xl">Skills</h1>
         <div className="text-[#7e9199] max-[426px]:text-2xl">{name}</div>
       </div>
 
@@ -34,20 +34,20 @@ function Skills() {
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Languages</h4>
             <div className="flex gap-5 max-[426px]:flex-wrap">
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={JavaScript_Logo} alt="" className="h-10" onMouseMove={() => setName("JavaScript")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("JavaScript")} onMouseLeave={() => handleLeave(null)}>
+                <img src={JavaScript_Logo} alt="JavaScript  " className="h-10" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Python_Logo} alt="" className="h-10" onMouseMove={() => setName("Python")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Python")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Python_Logo} alt="Python" className="h-12" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={HTML_Logo} alt="" className="h-12" onMouseMove={() => setName("HTML5")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("HTML5")} onMouseLeave={() => handleLeave(null)}>
+                <img src={HTML_Logo} alt="HTML5" className="h-12" />
               </div> 
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={CSS_Logo} alt="" className="h-10" onMouseMove={() => setName("CSS3")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("CSS3")} onMouseLeave={() => handleLeave(null)}>
+                <img src={CSS_Logo} alt="CSS3" className="h-12" />
               </div>
             </div>
           </div>
@@ -55,16 +55,16 @@ function Skills() {
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Library and Framworks</h4>
             <div className="flex gap-5 max-[426px]:flex-wrap">
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={React_Logo} alt="" className="h-12" onMouseMove={() => setName("React")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("React")} onMouseLeave={() => handleLeave(null)}>
+                <img src={React_Logo} alt="React" className="h-12" />
               </div> 
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Bootstrap_Logo} alt="" className="h-12" onMouseMove={() => setName("Bootstrap")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Bootstrap")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Bootstrap_Logo} alt="Bootstrap" className="h-10" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Tailwind_Logo} alt="" className="h-12" onMouseMove={() => setName("Tailwind")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Tailwind")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Tailwind_Logo} alt="Tailwind" className="h-12" />
               </div> 
             </div>
           </div>
@@ -76,12 +76,12 @@ function Skills() {
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Version Control</h4>
             <div className="flex gap-5 max-[426px]:flex-wrap">
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Git_Logo} alt="" className="h-12" onMouseMove={() => setName("Git")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Git")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Git_Logo} alt="Git" className="h-12" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Github_Logo} alt="" className="h-12" onMouseMove={() => setName("Github")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Github")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Github_Logo} alt="Github" className="h-12" />
               </div> 
             </div>
           </div>
@@ -90,16 +90,16 @@ function Skills() {
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Other tools & Services</h4>
             <div className="flex gap-5 max-[426px]:flex-wrap">
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Firebase_Logo} alt="" className="h-12" onMouseMove={() => setName("Firebase")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Firebase")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Firebase_Logo} alt="Firebase" className="h-12" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={Linux_Logo} alt="" className="h-12" onMouseMove={() => setName("Linux")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Linux")} onMouseLeave={() => handleLeave(null)}>
+                <img src={Linux_Logo} alt="Linux" className="h-12" />
               </div>
 
-              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300">
-                <img src={VSCode_Logo} alt="" className="h-12" onMouseMove={() => setName("Visual Studio Code")} onMouseLeave={() => handleLeave(null)}/>
+              <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Visual Studio Code")} onMouseLeave={() => handleLeave(null)}>
+                <img src={VSCode_Logo} alt="Visual Studio Code" className="h-12" />
               </div>
             </div>
           </div>
