@@ -3,7 +3,7 @@ import coding_gif from "../assets/images/coding.gif"
 
 function About() {
   return (
-    <div className="container mx-auto h-screen" id="about">
+    <div className="container mx-auto h-auto my-20" id="about">
       <div className="flex gap-6 justify-between items-center max-[426px]:flex-wrap max-[426px]:justify-center">
         <div className="w-1/2 max-[426px]:w-full text-center">
           <h1 className="text-4xl font-bold mb-5">Hi, I'm <span className="text-gray-300">Talha</span> 👋</h1>

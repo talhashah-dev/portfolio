@@ -20,9 +20,9 @@ function Skills() {
     setName(name)
   }
   return (
-    <div className="pb-5" id="skills">
+    <div className="pb-5 h-auto my-20" id="skills">
 
-      <div className="text-3xl text-center font-bold flex justify-between items-center h-screen">
+      <div className="text-3xl text-center font-bold flex justify-between items-center ">
         <h1 className="max-[426px]:text-2xl">Skills</h1>
         <div className="text-[#7e9199] max-[426px]:text-2xl">{name}</div>
       </div>
