@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { About, Skills, Projects, Contact } from "./pages";
-import { Navbar, Loader } from "./components/index.js";
+import { Navbar, Loader, Footer } from "./components/index.js";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,6 +31,7 @@ function App() {
           <Skills />
           <Projects />
           <Contact />
+          <Footer />
           </>
         )
       )}
