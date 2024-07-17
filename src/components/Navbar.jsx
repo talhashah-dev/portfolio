@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../App.css"
-import { Close_Menu, Open_Menu } from "../assets/images";
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+
 
 function Navbar({sendDataToParent}) {
   const [active, setActive] = useState(0);
@@ -27,7 +28,7 @@ function Navbar({sendDataToParent}) {
             <a href="/">
             <h1 className={`text-3xl max-[426px]:text-base italic text-gray-400 hover:text-white signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
             </a>     
-          <img src={`${menuOpen ? Close_Menu : Open_Menu}`} className="h-10 hidden max-[426px]:block cursor-pointer" alt="" onClick={() => handleMenu()} />
+          <button className="text-3xl hidden max-[426px]:block" onClick={() => handleMenu()}>{menuOpen ? <IoMdClose /> : <IoMdMenu />}</button>
         </div>
         <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:mt-10 ${menuOpen ? "max-[426px]:flex" : "max-[426px]:hidden"} `}>
             <a href="#about" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 0 ? "active" : "deactive"}`} onClick={() => handleLinkClick(0)}>
@@ -42,7 +43,13 @@ function Navbar({sendDataToParent}) {
             <a href="#contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>
               Contact
             </a>
-        </nav>   
+          <ul className={`flex justify-around items-center mt-28 min-[426px]:hidden`}>
+            <li><a href="https://github.com/talhashah-dev" className="text-4xl" target="_blank" rel="noreferrer"><FaGithub /></a></li>
+            <li><a href="https://www.linkedin.com/in/talhashah-dev/" className="text-4xl" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
+            <li><a href="https://stackoverflow.com/users/23691689/talha-shah" className="text-4xl" target="_blank" rel="noreferrer"><FaStackOverflow /></a></li>
+          </ul>
+        </nav>  
+        
     </div>
     </>
   );
