@@ -3,11 +3,11 @@ import coding_gif from "../assets/images/coding.gif"
 
 function About() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto h-auto min-[426px]:my-36" id="about">
       <div className="flex gap-6 justify-between items-center max-[426px]:flex-wrap max-[426px]:justify-center">
-        <div className="w-1/2 max-[426px]:w-full text-center">
-          <h1 className="text-4xl font-bold mb-5">Hi, I'm <span className="text-gray-300">Talha</span> 👋</h1>
-          <p className="text-[#7e9199] mb-5">
+        <div className="w-1/2 max-[426px]:w-full text-center min-[426px]:text-left">
+          <h1 className="text-4xl min-[426px]:text-7xl mb-5">Hi, I'm Talha👋</h1>
+          <p className="text-2xl mb-5">
             I am a Frontend Developer from Karachi. I have a passion
             for creating seamless, beautiful and creative websites, I have
             experience with various programming languages and specifically web
@@ -16,10 +16,10 @@ function About() {
             me more rigorous. <br />
             I am currently available to hire .
           </p>
-          <a href="mailto:syedt.in00@gmail.com" className="border border-white p-2 hover:border-[#00B2DF] hover:text-[#00B2DF] transition-all inline-block w-1/2 max-[426px]:w-full">Get in touch</a>
+          <a href="mailto:syedt.in00@gmail.com" className="p-2 px-6 text-base bg-white text-purple-500 hover:bg-purple-500 hover:text-white  transition-all inline-block w-auto max-[426px]:w-full">GET IN TOUCH</a>
         </div>
         <img
-          className="h-72 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
+          className="h-96 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
           src={coding_gif}
           alt=""
         />

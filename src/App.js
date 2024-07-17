@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { About, Skills, Projects, Contact } from "./pages";
-import { Navbar, Loader } from "./components/index.js";
-import { Routes, Route } from "react-router-dom";
+import { Navbar, Loader, Footer } from "./components/index.js";
+import { GoArrowUp } from "react-icons/go";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const handleDataFromChild = (data) => {
     setMenuOpen(data);
@@ -19,6 +20,20 @@ function App() {
     }, 1500);
   }, []);
 
+  const toggleVisible = () => { 
+    const scrolled = document.documentElement.scrollTop; 
+    scrolled > 300 ? setVisible(true) : setVisible(false);
+  }; 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
+  window.addEventListener("scroll", toggleVisible)
+  
 
   return (
     <div className="bg-[#171C28] max-[426px]:px-4 max-[787px]:px-4 text-white px-44 min-h-screen pb-10">
@@ -27,12 +42,14 @@ function App() {
         <Loader />
       ) : (
         !menuOpen && (
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <>
+          <button title="GO TO TOP" className={`rounded-lg py-4 px-2 text-2xl text-purple-500 hover:text-white bg-white hover:bg-purple-500 fixed right-10 bottom-10 ${visible ? "block" : "hidden"}`} onClick={scrollToTop}><GoArrowUp /></button>
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+          </>
         )
       )}
     </div>

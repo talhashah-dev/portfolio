@@ -4,9 +4,13 @@ import { Blog_App, Weather_App, CRUD_App, Js_Projects, Portfolio } from "../asse
 
 function Projects() {
   return (
-    <div className="flex flex-wrap justify-between gap-y-5 pb-5">
+    <div className="pb-5 h-auto my-20" id="projects">
 
-      <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+      <h1 className="text-3xl min-[426px]:text-6xl font-bold mb-10">Projects</h1>
+
+      <div className="flex flex-wrap justify-between gap-y-5">
+
+      {/* <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white shadow-2xl hover:shadow-indigo-500 transition-all border border-white">
         <img className="w-full" src={Weather_App} alt="Weather App" />
         <div className="px-4">
           <div className="flex items-center gap-5">
@@ -29,9 +33,9 @@ function Projects() {
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">api</span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">css</span>
         </div>
-      </div>
+      </div> */}
 
-      <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+      <div className="max-w-base min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white shadow-2xl hover:shadow-indigo-500 transition-all border border-white">
         <img className="w-full" src={Blog_App} alt="Blog App" />
         <div className="px-4">
           <div className="flex items-center gap-5">
@@ -57,7 +61,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+      {/* <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white shadow-2xl hover:shadow-indigo-500 transition-all border border-white">
         <img className="w-full" src={CRUD_App} alt="CRUD App" />
         <div className="px-4">
           <div className="flex items-center gap-5">
@@ -80,9 +84,9 @@ function Projects() {
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">bootstrap</span>
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">api</span>
         </div>
-      </div>
+      </div> */}
 
-      <div className="max-w-sm min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+      <div className="max-w-base min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white shadow-2xl hover:shadow-indigo-500 transition-all border border-white">
         <img className="w-full" src={Js_Projects} alt="JavaScript Projects" />
         <div className="px-4">
           <div className="flex items-center gap-5">
@@ -107,7 +111,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="max-[500px]:max-w-sm rounded overflow-hidden shadow-lg bg-white hover:scale-105 shadow-2xl hover:shadow-indigo-500/50 transition-all border border-white">
+      <div className="max-w-base min-[500px]:w-[49%] rounded overflow-hidden shadow-lg bg-white shadow-2xl hover:shadow-indigo-500 transition-all border border-white">
         <img className="w-full" src={Portfolio} alt="JavaScript ProjectsPortfolio Website" />
         <div className="px-4">
           <div className="flex items-center gap-5">
@@ -132,8 +136,11 @@ function Projects() {
         </div>
       </div>
 
+      </div>
+
+
     </div>
   )
 }
 
-export default Projects
+export default Projects;
