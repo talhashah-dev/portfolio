@@ -40,7 +40,10 @@ function Navbar({sendDataToParent}) {
             <a href="#projects" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 2 ? "active" : "deactive"}`} onClick={() => handleLinkClick(2)}>
               Projects
             </a>
-            <a href="#contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>
+            <a href="#certificates" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 3 ? "active" : "deactive"}`} onClick={() => handleLinkClick(3)}>
+              Certificates
+            </a>
+            <a href="#contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 4 ? "active" : "deactive"}`} onClick={() => handleLinkClick(4)}>
               Contact
             </a>
           <ul className={`flex justify-around items-center mt-28 min-[426px]:hidden`}>
