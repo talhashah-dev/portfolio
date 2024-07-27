@@ -16,7 +16,7 @@ function About() {
             me more rigorous. <br />
             I am currently available to hire .
           </p>
-          <a href="mailto:syedt.in00@gmail.com" className="p-2 px-6 text-base bg-white text-purple-500 hover:bg-purple-500 hover:text-white  transition-all inline-block w-auto max-[426px]:w-full">GET IN TOUCH</a>
+          <a href="#contact" className="p-2 px-6 text-base bg-white text-purple-500 hover:bg-purple-500 hover:text-white  transition-all inline-block w-auto max-[426px]:w-full">GET IN TOUCH</a>
         </div>
         <img
           className="h-96 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
