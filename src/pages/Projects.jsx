@@ -17,7 +17,7 @@ function Projects() {
       <div className="flex flex-wrap justify-between gap-y-5 transition-all ease-out">
 
       {/* Card 1 */}
-      <div className="max-w-base min-sm:h-80 min-[500px]:w-[49%] rounded overflow-hidden bg-white shadow-lg hover:shadow-indigo-500 border border-white relative" onMouseOver={() => handleHover(1)} onMouseLeave={() => setVisible(0)}>
+      <div className="w-full max-sm:max-h-36 h-80 min-[500px]:w-[49%] rounded overflow-hidden shadow-lg hover:shadow-indigo-500 border border-white relative" onMouseOver={() => handleHover(1)} onMouseLeave={() => setVisible(0)}>
         <img className="" src={Blog_App} alt="Blog App"/>
         
         <div className={`${visible === 1 ? 'absolute flex-col flex justify-end bg-black bg-opacity-45 inset-0 bg-gradient-to-t from-black via-transparent ' : 'hidden'} w-full`}>
@@ -48,7 +48,7 @@ function Projects() {
       </div>
 
       {/* Cars 2 */}
-      <div className="max-w-base min-sm:h-80 min-[500px]:w-[49%] rounded overflow-hidden shadow-lg hover:shadow-indigo-500 border relative" onMouseOver={() => handleHover(2)} onMouseLeave={() => setVisible(0)}>
+      <div className="w-full max-sm:max-h-36 h-80 min-[500px]:w-[49%] rounded overflow-hidden shadow-lg hover:shadow-indigo-500 border border-white relative" onMouseOver={() => handleHover(2)} onMouseLeave={() => setVisible(0)}>
         <img className="" src={Js_Projects} alt="JavaScript Projects" />
         
         <div className={`${visible === 2 ? 'absolute  flex-col flex justify-end bg-black bg-opacity-45 inset-0 bg-gradient-to-t from-black via-transparent' : 'hidden'} w-full`}>
@@ -79,7 +79,7 @@ function Projects() {
       </div>
 
       {/* Card 3 */}
-      <div className="max-w-base min-sm:h-80 min-[500px]:w-[49%] rounded overflow-hidden shadow-lg hover:shadow-indigo-500 border relative" onMouseOver={() => handleHover(3)} onMouseLeave={() => setVisible(0)}>
+      <div className="w-full max-sm:max-h-36 h-80 min-[500px]:w-[49%] rounded overflow-hidden shadow-lg hover:shadow-indigo-500 border border-white relative" onMouseOver={() => handleHover(3)} onMouseLeave={() => setVisible(0)}>
         <img className="" src={Portfolio} alt="JavaScript Projects Showcase" />
 
         <div className={`${visible === 3 ? 'absolute flex-col flex justify-end bg-black bg-opacity-45 inset-0 bg-gradient-to-t from-black via-transparent' : 'hidden'} w-full`}>
