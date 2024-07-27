@@ -44,7 +44,7 @@ function App() {
           <>
             <button
               title="GO TO TOP"
-              className={`rounded-lg py-4 px-2 text-2xl text-purple-500 hover:text-white bg-white hover:bg-purple-500 fixed right-10 bottom-10 ${
+              className={`rounded-lg py-4 px-2 text-2xl text-purple-500 hover:text-white bg-white hover:bg-purple-500 fixed right-10 bottom-10 shadow-lg z-30 shadow-purple-900 ${
                 visible ? "block" : "hidden"
               }`}
               onClick={scrollToTop}
