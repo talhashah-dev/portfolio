@@ -23,14 +23,14 @@ function Navbar({sendDataToParent}) {
 
   return (
     <>
-    <div className="container mx-auto flex justify-between items-center pt-8 mb-12 max-[426px]:mb-6 max-[426px]:block">
-        <div className="title max-[426px]:flex max-[426px]:justify-between max-[426px]:items-center">     
+    <div className="flex justify-between items-center pt-8 mb-12 max-md:mb-6 max-md:block">
+        <div className="title flex justify-between w-full max-[426px]:items-center">     
             <a href="/">
-            <h1 className={`text-3xl max-[426px]:text-base italic text-gray-400 hover:text-white signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
+            <h1 className={`text-3xl max-md:text-xl italic font-bold signature`} onClick={() => handleLinkClick(0)}>&lt;Syed Talha /&gt;</h1>
             </a>     
-          <button className="text-3xl hidden max-[426px]:block" onClick={() => handleMenu()}>{menuOpen ? <IoMdClose /> : <IoMdMenu />}</button>
+          <button className="text-2xl hidden max-md:block" onClick={() => handleMenu()}>{menuOpen ? <IoMdClose /> : <IoMdMenu />}</button>
         </div>
-        <nav className={`flex gap-10 max-[426px]:flex-col max-[426px]:mt-10 ${menuOpen ? "max-[426px]:flex" : "max-[426px]:hidden"} `}>
+        <nav className={`flex gap-10 max-md:flex-col max-md:mt-12 ${menuOpen ? "max-md:flex" : "max-md:hidden"} `}>
             <a href="#about" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 0 ? "active" : "deactive"}`} onClick={() => handleLinkClick(0)}>
               About
             </a>
@@ -46,7 +46,7 @@ function Navbar({sendDataToParent}) {
             <a href="#contact" className={`text-[#7e9199] hover:text-white pb-1 hover:border-b text-lg transition-all ${active === 4 ? "active" : "deactive"}`} onClick={() => handleLinkClick(4)}>
               Contact
             </a>
-          <ul className={`flex justify-around items-center mt-28 min-[426px]:hidden`}>
+          <ul className={`hidden justify-around items-center mt-28 max-md:flex`}>
             <li><a href="https://github.com/talhashah-dev" className="text-4xl" target="_blank" rel="noreferrer"><FaGithub /></a></li>
             <li><a href="https://www.linkedin.com/in/talhashah-dev/" className="text-4xl" target="_blank" rel="noreferrer"><FaLinkedin /></a></li>
             <li><a href="https://stackoverflow.com/users/23691689/talha-shah" className="text-4xl" target="_blank" rel="noreferrer"><FaStackOverflow /></a></li>

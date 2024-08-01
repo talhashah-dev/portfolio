@@ -35,7 +35,7 @@ function App() {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <div className="bg-[#171C28] max-[426px]:px-4 max-[787px]:px-4 text-white px-44 min-h-screen pb-10">
+    <div className="bg-[#171C28] max-md:px-4 max-xl:px-10 text-white px-44 min-h-screen pb-10">
       <Navbar sendDataToParent={handleDataFromChild} />
       {loading ? (
         <Loader />
