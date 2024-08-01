@@ -16,6 +16,10 @@ import Js_Projects from "./js-projects.png";
 import Portfolio from "./portfolio.png";
 import Tailwind_Logo from "./tailwind-logo.svg";
 
+// Certificates
+import Design_Certificate from "./design-certificate.png";
+import JS_Certificate from "./js-dsa-certificate.png";
+
 export {
   HTML_Logo,
   CSS_Logo,
@@ -34,4 +38,6 @@ export {
   CRUD_App,
   Js_Projects,
   Portfolio,
+  Design_Certificate,
+  JS_Certificate
 };

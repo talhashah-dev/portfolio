@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { About, Skills, Projects, Contact } from "./pages";
+import { About, Skills, Projects, Contact, Certificates } from "./pages";
 import { Navbar, Loader, Footer } from "./components/index.js";
 import { GoArrowUp } from "react-icons/go";
 
@@ -20,35 +20,43 @@ function App() {
     }, 1500);
   }, []);
 
-  const toggleVisible = () => { 
-    const scrolled = document.documentElement.scrollTop; 
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
     scrolled > 300 ? setVisible(true) : setVisible(false);
-  }; 
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
-  window.addEventListener("scroll", toggleVisible)
-  
+  window.addEventListener("scroll", toggleVisible);
 
   return (
-    <div className="bg-[#171C28] max-[426px]:px-4 max-[787px]:px-4 text-white px-44 min-h-screen pb-10">
+    <div className="bg-[#171C28] max-md:px-4 max-xl:px-10 text-white px-44 min-h-screen pb-10">
       <Navbar sendDataToParent={handleDataFromChild} />
       {loading ? (
         <Loader />
       ) : (
         !menuOpen && (
           <>
-          <button title="GO TO TOP" className={`rounded-lg py-4 px-2 text-2xl text-purple-500 hover:text-white bg-white hover:bg-purple-500 fixed right-10 bottom-10 ${visible ? "block" : "hidden"}`} onClick={scrollToTop}><GoArrowUp /></button>
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
+            <button
+              title="GO TO TOP"
+              className={`rounded-lg py-4 px-2 text-2xl text-purple-500 hover:text-white bg-white hover:bg-purple-500 fixed right-10 bottom-10 shadow-lg z-30 shadow-purple-900 ${
+                visible ? "block" : "hidden"
+              }`}
+              onClick={scrollToTop}
+            >
+              <GoArrowUp />
+            </button>
+            <About />
+            <Skills />
+            <Projects />
+            <Certificates />
+            <Contact />
+            <Footer />
           </>
         )
       )}
