@@ -22,18 +22,18 @@ function Skills() {
   return (
     <div className="pb-5 h-auto my-20" id="skills">
 
-      <div className="text-3xl min-[426px]:text-6xl text-center font-bold flex justify-between items-center ">
-        <h1 className="text-3xl min-[426px]:text-6xl">Skills</h1>
-        <div className="text-[#7e9199] max-[426px]:text-2xl">{name}</div>
+      <div className="text-center font-bold flex justify-between items-center ">
+        <h1 className="text-6xl max-md:text-4xl">Skills</h1>
+        <div className="text-[#7e9199] text-6xl max-md:text-4xl">{name}</div>
       </div>
 
-      <div className="flex max-[426px]:flex-col items-center justify-between mt-14 max-[426px]:mt-10 gap-10">
+      <div className="flex max-sm:flex-col items-center justify-between mt-14 gap-10">
 
-        <div className="flex flex-col gap-10 max-[426px]:gap-5 max-[426px]:w-full">
+        <div className="flex flex-col gap-10 max-sm:gap-5 max-sm:w-full">
 
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Languages</h4>
-            <div className="flex gap-5 max-[426px]:flex-wrap">
+            <div className="flex gap-5 max-sm:flex-wrap">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("JavaScript")} onMouseLeave={() => handleLeave(null)}>
                 <img src={JavaScript_Logo} alt="JavaScript  " className="h-10" />
               </div>
@@ -54,7 +54,7 @@ function Skills() {
 
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Library and Framworks</h4>
-            <div className="flex gap-5 max-[426px]:flex-wrap">
+            <div className="flex gap-5 max-sm:flex-wrap">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("React")} onMouseLeave={() => handleLeave(null)}>
                 <img src={React_Logo} alt="React" className="h-12" />
               </div> 
@@ -71,11 +71,11 @@ function Skills() {
 
         </div>
 
-        <div className="flex flex-col gap-10 max-[426px]:gap-5 max-[426px]:w-full">
+        <div className="flex flex-col gap-10 max-sm:gap-5 max-sm:w-full">
 
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Version Control</h4>
-            <div className="flex gap-5 max-[426px]:flex-wrap">
+            <div className="flex gap-5 max-sm:flex-wrap">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Git")} onMouseLeave={() => handleLeave(null)}>
                 <img src={Git_Logo} alt="Git" className="h-12" />
               </div>
@@ -89,7 +89,7 @@ function Skills() {
 
           <div className="flex flex-col gap-5">
             <h4 className="text-2xl">Other tools & Services</h4>
-            <div className="flex gap-5 max-[426px]:flex-wrap">
+            <div className="flex gap-5 max-sm:flex-wrap">
               <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName("Firebase")} onMouseLeave={() => handleLeave(null)}>
                 <img src={Firebase_Logo} alt="Firebase" className="h-12" />
               </div>

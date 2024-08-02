@@ -4,7 +4,7 @@ import { Design_Certificate, JS_Certificate } from "../assets/images";
 const Certificates = () => {
   return (
     <div id="certificates">
-      <h1 className="text-3xl min-[426px]:text-6xl font-bold mb-10">
+      <h1 className="text-6xl max-md:text-4xl font-bold mb-10">
         Certificates
       </h1>
 
