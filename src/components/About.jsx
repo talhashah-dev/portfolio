@@ -16,7 +16,7 @@ function About() {
           <a href="#contact" className="p-2 px-4 rounded-md text-base bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition-all inline-block w-auto">GET IN TOUCH</a>
         </div>
         <img
-          className="h-96 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
+          className="h-80 max-xl:h-64 rounded max-[426px]:h-auto max-[426px]:w-full max-[426px]:mb-5"
           src={coding_gif}
           alt=""
         />
