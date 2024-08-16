@@ -129,10 +129,9 @@ function Projects() {
 
               <div className="px-4 pt-4 pb-2">
                 {
-                 cards.tags.map(element => {
-                  const id = Math.random(100 * 100)
+                 cards.tags.map((element,index) => {
                   return (
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={id}>{element}</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={index}>{element}</span>
                   )
                  })
                 }
