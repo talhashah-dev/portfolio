@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Blog_App, Weather_App, CRUD_App, Js_Projects, Portfolio } from "../assets/images/index.js"
+import { Blog_App, Weather_App, CRUD_App, Portfolio } from "../assets/images/index.js"
 
 function Projects() {
   const [visible,setVisible] = useState(0);
@@ -20,20 +20,6 @@ function Projects() {
         "html", "css", "javascript", "firebase"
       ]
     },
-    // {
-    //   id: 2,
-    //   image: Js_Projects,
-    //   imageAlt: "JavaScript Projects",
-    //   name: "JavaScript Projects",
-    //   description: "Showcasing all JavaScript projects that I have built.",
-    //   links: {
-    //     gitHub: "https://github.com/talhashah-dev/js-projects",
-    //     hosted: "https://talhashah-dev.github.io/js-projects/"
-    //   },
-    //   tags: [
-    //     "html", "css", "javascript"
-    //   ]
-    // },
     {
       id: 3,
       image: Portfolio,
