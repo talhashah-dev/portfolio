@@ -8,7 +8,7 @@ function About() {
         <div className="w-1/2 max-xl:w-full text-left max-md:text-center">
           <h1 className="text-5xl max-md:text-4xl mb-5">Hi, I'm Talha 👋</h1>
           <p className="text-3xl max-md:text-base mb-5 font-light">
-            I am a Frontend Developer from Karachi. I have a passion
+            I am a Frontend Developer, I have a passion
             for creating seamless, beautiful and creative websites, I have
             experience with various programming languages and specifically web
             technologies.
