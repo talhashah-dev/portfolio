@@ -10,6 +10,8 @@ import Github_Logo from "./github-logo.svg";
 import Linux_Logo from "./linux-logo.svg";
 import VSCode_Logo from "./vs-code-logo.svg";
 import Madaris_Qadriya from "./madaris-qadriya.png"
+import Weather_App from "./weather-app.png";
+import CRUD_App from "./crud-app.png";
 import Tailwind_Logo from "./tailwind-logo.svg";
 
 // Certificates
@@ -31,5 +33,7 @@ export {
   Tailwind_Logo,
   Design_Certificate,
   JS_Certificate,
-  Madaris_Qadriya
+  Madaris_Qadriya,
+  Weather_App,
+  CRUD_App,
 };

@@ -1,23 +1,51 @@
 import React, { useState, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Madaris_Qadriya } from "../assets/images/index.js"
+import { Weather_App,CRUD_App, } from "../assets/images/index.js"
 
 function Projects() {
   const [visible,setVisible] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const projects = [
+    // {
+    //   id: 1,
+    //   image: Madaris_Qadriya,
+    //   imageAlt: "Madaris Qadriya Website",
+    //   name: "Madaris Qadriya",
+    //   description: null,
+    //   links: {
+    //     gitHub: null,
+    //     hosted: "https://madaris-qadriya.vercel.app/"
+    //   },
+    //   tags: [
+    //     "react", "tailwind", "firebase"
+    //   ]
+    // },
     {
-      id: 1,
-      image: Madaris_Qadriya,
-      imageAlt: "Madaris Qadriya Website",
-      name: "Madaris Qadriya",
-      description: null,
+      id: 2,
+      image: Weather_App,
+      imageAlt: "React Weather App",
+      name: "Weather App",
+      description: "A Weather App built with React.js and OpenWeatherMap API",
       links: {
-        gitHub: null,
-        hosted: "https://madaris-qadriya.vercel.app/"
+        gitHub: "https://github.com/talhashah-dev/weather-app-react",
+        hosted: "https://weather-app-react-st.netlify.app/"
       },
       tags: [
-        "react", "tailwind", "firebase"
+        "react", "css", "api"
+      ]
+    },
+    {
+      id: 3,
+      image: CRUD_App,
+      imageAlt: "CRUD App",
+      name: "CRUD App",
+      description: "A CRUD operation Web App built with React.js and Bootstrap for UI and Mockapi as the DB.",
+      links: {
+        gitHub: "https://github.com/talhashah-dev/react-crud-app",
+        hosted: "https://react-crud-app-gilt.vercel.app/"
+      },
+      tags: [
+        "react", "bootstrap", "api"
       ]
     }
   ]

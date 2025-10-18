@@ -76,7 +76,7 @@ function Skills() {
                       {
                         value.items.map((icon, id) => {
                           return (
-                            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-slate-300" onMouseMove={() => setName(icon.alt)} onMouseLeave={() => handleLeave(null)} key={id}>
+                            <div className="p-1 h-16 w-16 flex justify-center items-center bg-white rounded-full hover:bg-gray-200" onMouseMove={() => setName(icon.alt)} onMouseLeave={() => handleLeave(null)} key={id}>
                             <img src={icon.src} alt={icon.alt} className="h-10"  />
                             </div>
                           )
