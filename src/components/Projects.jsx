@@ -1,41 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Blog_App, Weather_App, CRUD_App, Portfolio } from "../assets/images/index.js"
+import { Weather_App,CRUD_App, } from "../assets/images/index.js"
 
 function Projects() {
   const [visible,setVisible] = useState(0);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const projects = [
+    // {
+    //   id: 1,
+    //   image: Madaris_Qadriya,
+    //   imageAlt: "Madaris Qadriya Website",
+    //   name: "Madaris Qadriya",
+    //   description: null,
+    //   links: {
+    //     gitHub: null,
+    //     hosted: "https://madaris-qadriya.vercel.app/"
+    //   },
+    //   tags: [
+    //     "react", "tailwind", "firebase"
+    //   ]
+    // },
     {
-      id: 1,
-      image: Blog_App,
-      imageAlt: "Blog App",
-      name: "Blog App",
-      description: "Write your thoughts and publish them online on a secure and easy-to-use platform.",
-      links: {
-        gitHub: "https://github.com/talhashah-dev/blogging-app",
-        hosted: "https://talhashah-dev.github.io/blogging-app/"
-      },
-      tags: [
-        "html", "css", "javascript", "firebase"
-      ]
-    },
-    {
-      id: 3,
-      image: Portfolio,
-      imageAlt: "Portfolio",
-      name: "Portfolio",
-      description: "Personal Portfolio built with React.js & Tailwind CSS",
-      links: {
-        gitHub: "https://github.com/talhashah-dev/portfolio",
-        hosted: "https://talhashah.vercel.app/"
-      },
-      tags: [
-        "react", "tailwind", "javascript"
-      ]
-    },
-    {
-      id: 4,
+      id: 2,
       image: Weather_App,
       imageAlt: "React Weather App",
       name: "Weather App",
@@ -49,7 +35,7 @@ function Projects() {
       ]
     },
     {
-      id: 5,
+      id: 3,
       image: CRUD_App,
       imageAlt: "CRUD App",
       name: "CRUD App",
@@ -61,7 +47,7 @@ function Projects() {
       tags: [
         "react", "bootstrap", "api"
       ]
-    },
+    }
   ]
 
   useEffect(() => {
@@ -101,9 +87,11 @@ function Projects() {
                   <h1 className="font-bold text-xl mb-1 mt-1 text-white max-md:text-black">
                   {cards.name}
                   </h1>
-                  <a href={cards.links.gitHub} className="font-bold text-xl mb-1 mt-1 max-md:text-black text-white cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
+                  {
+                    cards.links.gitHub ? <a href={cards.links.gitHub} className="font-bold text-xl mb-1 mt-1 max-md:text-black text-white cursor-pointer hover:scale-110" target="_blank" title="Github Repo" rel="noreferrer">
                     <FaGithub /> 
-                  </a>
+                  </a> : null
+                  }
                   <a href={cards.links.hosted} className="font-bold text-base mb-1 mt-1 max-md:text-black text-white cursor-pointer hover:scale-110" target="_blank" title="Live Preview" rel="noreferrer">
                     <FaExternalLinkAlt /> 
                   </a>

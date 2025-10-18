@@ -9,11 +9,9 @@ import Git_Logo from "./git-logo.svg";
 import Github_Logo from "./github-logo.svg";
 import Linux_Logo from "./linux-logo.svg";
 import VSCode_Logo from "./vs-code-logo.svg";
-import Blog_App from "./blog-app.png";
+import Madaris_Qadriya from "./madaris-qadriya.png"
 import Weather_App from "./weather-app.png";
 import CRUD_App from "./crud-app.png";
-import Js_Projects from "./js-projects.png";
-import Portfolio from "./portfolio.png";
 import Tailwind_Logo from "./tailwind-logo.svg";
 
 // Certificates
@@ -33,11 +31,9 @@ export {
   Linux_Logo,
   VSCode_Logo,
   Tailwind_Logo,
-  Blog_App,
+  Design_Certificate,
+  JS_Certificate,
+  Madaris_Qadriya,
   Weather_App,
   CRUD_App,
-  Js_Projects,
-  Portfolio,
-  Design_Certificate,
-  JS_Certificate
 };
